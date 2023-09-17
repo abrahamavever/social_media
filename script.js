@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setTheme(theme) {
     body.setAttribute('data-bs-theme', theme);
-    themeToggle.textContent = theme === 'light' ? 'Tema oscuro' : 'Tema claro';
+    themeToggle.textContent = theme === 'light' ? 'Dark theme' : 'Light theme';
     localStorage.setItem('theme', theme);
     const navbar = document.querySelector('.navbar');
     navbar.setAttribute('data-bs-theme', theme);
