@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BitBoy_</title>
   <link id="theme-style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">bitboy_</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +28,10 @@
               Dropdown
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" onclick="setTheme('light')"><i class="bi bi-sun"></i> Light</a></li>
+<li><a class="dropdown-item" onclick="setTheme('dark')"><i class="bi bi-moon-stars"></i> Dark</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" ><i class="bi bi-circle-half"></i> Auto</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -49,6 +50,6 @@
     <button id="theme-toggle">Dark theme</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="theme-toggle.js"></script>
 </body>
 </html>
