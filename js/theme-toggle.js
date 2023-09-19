@@ -22,6 +22,15 @@ const setTheme = (selectedTheme) => {
   localStorage.setItem(THEME_KEY, theme);
   localStorage.setItem(NAVBAR_THEME_KEY, theme);
   setThemeOnPrefersDarkModeChange(theme);
+
+  const themeIcon = document.getElementById('theme-icon');
+  if (selectedTheme === 'light') {
+    themeIcon.className = 'bi bi-sun';
+  } else if (selectedTheme === 'dark') {
+    themeIcon.className = 'bi bi-moon-stars';
+  } else {
+    themeIcon.className = 'bi bi-circle-half';
+  }
 };
 
 const setThemeOnPrefersDarkModeChange = (theme) => {
